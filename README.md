@@ -1,7 +1,7 @@
 # ipython-profile
 
 A slightly opinionated template for iPython configuration for interactive development.
-No imports and auto-reload for packages and modules in the project.
+**Auto-reload** and **no imports** for packages and modules in the project.
 
 ## Usage
 
@@ -15,11 +15,10 @@ pip install ipython-profile
 ```
 
 Now you can use `ipython-profile` in the project directory:
-```
+```bash
 $ cd ~/awesome-project
-$ ipython-profile # If installed with pip
+$ ipython-profile            # If installed with pip
 $ poetry run ipython-profile # If installed locally with poetry
-
 [ipython-profile] Created .ipython-profile directory with default config.
 [ipython-profile] It seems that you are using git in this project. Consider adding .ipython-profile to .gitignore.
 Python 3.9.6 (default, Jun 29 2021, 05:25:02)
@@ -35,7 +34,7 @@ It loads modules automatically (magic!) if the called name wasn't found in the e
 
 It also automatically reloads modules on changes using [iPython autoreload extension](https://ipython.readthedocs.io/en/stable/config/extensions/autoreload.html).
 
-```
+```python
 In [1]: requests.get('https://google.com/')
 Autoimport: import requests
 Out[1]: <Response [200]>
@@ -51,7 +50,7 @@ In [4]: libs.auth.get_token()
 Out[4]: 2
 ```
 
-`ipython-profile` by default created an iPython profile directory in `./.ipython-profile`.
+`ipython-profile` by default creates an iPython profile directory in `./.ipython-profile`.
 If you want to set a different directory, use `--profile-dir` option.
 
 ## How it works?
