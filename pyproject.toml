@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ipython-profile"
+version = "0.1.0"
+description = "An opinionated iPython profile for interactive development"
+authors = ["Seva Zhidkov <zhidkovseva@gmail.com>"]
+license = "MIT License"
+
+[tool.poetry.scripts]
+ipython-profile = 'ipython_profile:run'
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+click = "^8.0.3"
+ipython = "^8.0.1"
+ipython-autoimport = "^0.3"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
