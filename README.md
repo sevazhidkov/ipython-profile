@@ -3,6 +3,8 @@
 A slightly opinionated template for iPython configuration for interactive development.
 **Auto-reload** and **no imports** for packages and modules in the project.
 
+![Example usage](example.png)
+
 ## Usage
 
 Install the library using your favorite package manager:
